@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: auto;
+}
+
+.column.a {
+  float: left;
+  width: 50%;
+  padding-right: 50px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hr.half {
+  width: 50%;
+}
+
+
+@media screen and (max-width: 900px) {
+
+  body{
+    margin: 0px;
+    padding: 10px;
+  }
+  .column.a {
+    width: 100%;
+    padding: 10px;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+}
